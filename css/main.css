@@ -1,0 +1,310 @@
+/*/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+   box-sizing: border-box; 
+}
+
+body {
+   font-family: 'Ek Mukta', sans-serif;
+   line-height: 1.4;
+   color: #494949;
+   text-align: center;
+}
+
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+   color: #494949;
+}
+
+img {
+   max-width: 100%;
+   border-radius: .5em;
+}
+
+
+/* ================================= 
+  Layout Containers
+==================================== */
+
+body {
+   background: #d1ddd3;  
+}
+
+.main-header,
+.main-footer {
+   background: #d1ddd3;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
+.main-header {
+   padding-bottom: 40px; 
+}
+
+.container {
+   background: #d1ddd3;
+}
+
+.projects {
+   background: #fff;
+   padding: 2em 1em;
+}
+
+.main-footer {
+   padding-top: 40px;
+}
+
+
+/* ================================= 
+  Page Elements
+==================================== */
+
+
+.main-header h1 {
+   margin: 0 auto;
+   font-size: 1.8em;
+   padding-top: 15px;
+   padding-bottom: 10px;
+}
+
+.main-nav {
+   max-width: 300px;
+   margin: 0 auto;
+   padding-bottom: 35px;
+}
+
+.main-nav li {
+   margin: 5px;
+   padding: 9px;
+   background: #fff;
+   border-radius: .5em;
+}
+
+.description img {
+   width: 200px;
+}
+
+.description p {
+   font-size: 1.1em;
+   margin: 0 auto;
+   max-width: 430px;
+   padding-top: 15px;
+}
+
+.projects h4 {
+   padding-bottom: 20px;
+}
+
+.proj {
+   padding-bottom: 30px;
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.proj h2 {
+   max-width: 300px;
+   margin: 0 auto;
+   font-weight: 500;
+   font-size: 1.2em;
+   padding-top: 20px;
+   padding-bottom: 10px;
+}
+
+.proj p {
+   max-width: 300px;
+   margin: 0 auto;
+}
+
+.contact {
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.contact p, ul {
+   font-size: 1.09em;
+   margin: 0 auto;
+   padding-top: 5px;
+}
+
+.contact ul {
+   padding-top: 30px;
+   padding-bottom: 50px;
+}
+
+.contact li {
+   padding: 5px;
+}
+
+.bottom-nav {
+   width: 100%;
+   display: inline-block;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.bottom-nav h4{
+   float: left;
+   margin: 0 auto;
+}
+
+.bottom-nav li{
+   display: none;
+}
+
+.to-top {
+   float: right;
+   display: block;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 767px) {
+   
+   .main-header,
+   .projects,
+   .main-footer{
+      padding-left: 2em;
+      padding-right: 2em;
+   }
+   
+   .main-header {
+      padding-top: 30px;
+      padding-bottom: 40px;
+   }
+   
+   .main-nav li {
+      display: inline-block;
+      background: none;
+    }
+   
+   .description {
+      display: inline-block;
+      padding-top: 10px;
+   }
+   
+   .description p {
+      width: 55%;
+      float: left;
+      text-align: left;
+      padding-top: 10px;
+      font-size: 1.2em;
+   }
+   
+   .description a {
+      width: 45%;
+      float: right;
+      padding-left: 15px;
+      padding-right: 5px;   
+   }
+   
+   .description img {
+      width: 100%;
+   }
+   
+   .projects {
+      display: inline-block;
+      padding-bottom: 0;
+   }
+   
+   .proj {
+      width: 50%;
+      float: left;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 50px;
+   }
+   
+   .main-footer {
+      padding-bottom: 50px;
+   }
+   
+   .contact p {
+      font-size: 1.25em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+   
+   .contact ul {
+      font-size: 1.25em;
+      padding-bottom: 60px;
+   }
+   
+   .bottom-nav h4 {
+      padding-top: 5px;
+   }
+   
+   .bottom-nav ul {
+      float: right;
+      font-size: .9em;
+   }
+
+   .bottom-nav li {
+      display: inline-block;
+      padding-left: 25px;
+   }
+   
+   .to-top {
+      display: none;
+   }
+   
+}
+ 
+
+@media (min-width: 1023px) {
+   
+   body {
+      max-width: 1280px;
+      margin: 0 auto;
+   }
+   
+   
+   .main-header h1 {
+      width: 40%;
+      float: left;
+      text-align: left;
+      padding-left: 1em;
+   }
+   
+   .main-nav {
+      width: 80%;
+      float: right;
+      max-width: 60%;
+      text-align: right;
+      padding-right: 1.3em;
+   }
+      
+   .description {
+      width: 100%;
+      padding-left: 2em;
+      padding-right: 2em;
+   }
+   
+   .container {
+      padding-left: 2em;
+      padding-right: 2em;
+   }
+   
+   .proj {
+      width: 33%;
+      float: left;
+   }
+   
+   .main-footer {
+      padding-left: 4em;
+      padding-right: 4em;
+      padding-bottom: 0;
+   }
+      
+}
+
